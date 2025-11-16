@@ -18,12 +18,15 @@ function Home() {
           Sign Out
         </button>
       </div>
-      
+
       <div className="home-content">
         <div className="welcome-card">
           <h2>Hello! 👋</h2>
           <p>You have successfully signed in to your account.</p>
-          <p>This is your home page where you can manage your profile and settings.</p>
+          <p>
+            This is your home page where you can manage your profile and
+            settings.
+          </p>
         </div>
 
         <div className="features-grid">
@@ -57,4 +60,3 @@ function Home() {
 }
 
 export default Home;
-

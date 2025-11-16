@@ -8,7 +8,7 @@ function Signup() {
     name: '',
     email: '',
     password: '',
-    confirmPassword: ''
+    confirmPassword: '',
   });
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
@@ -20,7 +20,8 @@ function Signup() {
 
   const validatePassword = (password) => {
     // At least 8 characters, one uppercase, one lowercase, one number
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{8,}$/;
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{8,}$/;
     return passwordRegex.test(password);
   };
 
@@ -45,7 +46,8 @@ function Signup() {
     if (!formData.password) {
       newErrors.password = 'Password is required';
     } else if (!validatePassword(formData.password)) {
-      newErrors.password = 'Password must be at least 8 characters with uppercase, lowercase, and number';
+      newErrors.password =
+        'Password must be at least 8 characters with uppercase, lowercase, and number';
     }
 
     // Confirm password validation
@@ -61,30 +63,30 @@ function Signup() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
 
     // Clear error when user starts typing
     if (errors[name]) {
-      setErrors(prev => ({
+      setErrors((prev) => ({
         ...prev,
-        [name]: ''
+        [name]: '',
       }));
     }
   };
 
   const handleBlur = (e) => {
     const { name } = e.target;
-    setTouched(prev => ({
+    setTouched((prev) => ({
       ...prev,
-      [name]: true
+      [name]: true,
     }));
 
     // Validate individual field
     const newErrors = { ...errors };
-    
+
     if (name === 'name') {
       if (!formData.name.trim()) {
         newErrors.name = 'Name is required';
@@ -109,7 +111,8 @@ function Signup() {
       if (!formData.password) {
         newErrors.password = 'Password is required';
       } else if (!validatePassword(formData.password)) {
-        newErrors.password = 'Password must be at least 8 characters with uppercase, lowercase, and number';
+        newErrors.password =
+          'Password must be at least 8 characters with uppercase, lowercase, and number';
       } else {
         delete newErrors.password;
       }
@@ -130,7 +133,7 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (validate()) {
       // Here you would typically send the data to your backend
       console.log('Signup data:', formData);
@@ -142,7 +145,7 @@ function Signup() {
         name: true,
         email: true,
         password: true,
-        confirmPassword: true
+        confirmPassword: true,
       });
     }
   };
@@ -152,7 +155,7 @@ function Signup() {
       <div className="auth-card">
         <h2>Create Account</h2>
         <p className="auth-subtitle">Sign up to get started</p>
-        
+
         <form onSubmit={handleSubmit} className="auth-form">
           <div className="form-group">
             <label htmlFor="name">Full Name</label>
@@ -197,7 +200,9 @@ function Signup() {
               value={formData.password}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={touched.password && errors.password ? 'input-error' : ''}
+              className={
+                touched.password && errors.password ? 'input-error' : ''
+              }
               placeholder="Enter your password"
             />
             {touched.password && errors.password && (
@@ -214,7 +219,11 @@ function Signup() {
               value={formData.confirmPassword}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={touched.confirmPassword && errors.confirmPassword ? 'input-error' : ''}
+              className={
+                touched.confirmPassword && errors.confirmPassword
+                  ? 'input-error'
+                  : ''
+              }
               placeholder="Confirm your password"
             />
             {touched.confirmPassword && errors.confirmPassword && (
@@ -236,4 +245,3 @@ function Signup() {
 }
 
 export default Signup;
-

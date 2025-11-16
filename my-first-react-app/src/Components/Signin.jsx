@@ -6,7 +6,7 @@ function Signin() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
-    password: ''
+    password: '',
   });
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
@@ -39,30 +39,30 @@ function Signin() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
 
     // Clear error when user starts typing
     if (errors[name]) {
-      setErrors(prev => ({
+      setErrors((prev) => ({
         ...prev,
-        [name]: ''
+        [name]: '',
       }));
     }
   };
 
   const handleBlur = (e) => {
     const { name } = e.target;
-    setTouched(prev => ({
+    setTouched((prev) => ({
       ...prev,
-      [name]: true
+      [name]: true,
     }));
 
     // Validate individual field
     const newErrors = { ...errors };
-    
+
     if (name === 'email') {
       if (!formData.email.trim()) {
         newErrors.email = 'Email is required';
@@ -88,7 +88,7 @@ function Signin() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (validate()) {
       // Here you would typically send the data to your backend
       console.log('Signin data:', formData);
@@ -98,7 +98,7 @@ function Signin() {
       // Mark all fields as touched to show errors
       setTouched({
         email: true,
-        password: true
+        password: true,
       });
     }
   };
@@ -108,7 +108,7 @@ function Signin() {
       <div className="auth-card">
         <h2>Welcome Back</h2>
         <p className="auth-subtitle">Sign in to your account</p>
-        
+
         <form onSubmit={handleSubmit} className="auth-form">
           <div className="form-group">
             <label htmlFor="email">Email</label>
@@ -136,7 +136,9 @@ function Signin() {
               value={formData.password}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={touched.password && errors.password ? 'input-error' : ''}
+              className={
+                touched.password && errors.password ? 'input-error' : ''
+              }
               placeholder="Enter your password"
             />
             {touched.password && errors.password && (
@@ -158,4 +160,3 @@ function Signin() {
 }
 
 export default Signin;
-
