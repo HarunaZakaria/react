@@ -7,10 +7,12 @@ import CurrentTime from './CurrentTime';
 function App() {
   return (
     <>
-      <Image />
+      {/* <Image />
       <Test />
-      <List />
+      <List /> */}
+      <header>
       <CurrentTime />
+      </header>
     </>
   );
 }
