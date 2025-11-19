@@ -3,7 +3,7 @@ import React from 'react';
 const Tail = () => {
   return (
     <div>
-      <h1 class="text-4xl font-bold underline text-gradient">Hello world!</h1>
+      <h1 class="text-gray-500 dark:text-gray-400 bg-white">Hello world!</h1>
     </div>
   );
 };
