@@ -76,31 +76,47 @@ header {
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #eee;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+}
 .header {
-  background-color: rgb(189, 189, 30);
-  padding: 30px;
+  background-color: #f5ba13;
+  padding: 16px 32px;
+  margin: auto -16px;
   color: white;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.3);
+}
+.header h1 {
+  font-family: 'McLaren', sans-serif;
+  font-weight: 200;
 }
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 25%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  height: 2.5rem;
+}
+.footer p{
+  color: #ccc;
 }
 .notes {
   margin-top: 20px;
   margin-left: 40px;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
-  width: 350px;
-  padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+
+  width: 400px;
+  padding: 10px;
 }
-.notes h1{
+.notes h1 {
   font-size: 25px;
 }
-.notes p{
+.notes p {
   font-size: 30px;
   padding-top: 10px;
 }
