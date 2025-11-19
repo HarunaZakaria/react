@@ -100,7 +100,7 @@ html {
   bottom: 0;
   height: 2.5rem;
 }
-.footer p{
+.footer p {
   color: #ccc;
 }
 .notes {
@@ -119,4 +119,12 @@ html {
 .notes p {
   font-size: 30px;
   padding-top: 10px;
+}
+.card {
+  margin: 32px;
+}
+.card img{
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
 }
