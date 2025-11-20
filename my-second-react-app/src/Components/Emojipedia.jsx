@@ -8,38 +8,38 @@ const emojipedia = [
   },
   {
     id: 2,
-    name: 'Red Heart',
-    emoji: '❤️',
+    name: 'Person Standing',
+    emoji: '🧍',
     meaning:
-      'The red heart ideograph is traditionally used for expressions of love and romance across many cultures, with this being amongst the most frequence use cases for this emoji.',
+      'A person standing upright. Commonly used to convey awkwardness, particularly on TikTok.Similar in appearance to 🚶 Person Walking, but shown facing forward and without any motion implied.',
   },
   {
     id: 3,
-    name: 'Red Heart',
-    emoji: '❤️',
+    name: 'Woman and Man Holding Hands',
+    emoji: '👫',
     meaning:
-      'The red heart ideograph is traditionally used for expressions of love and romance across many cultures, with this being amongst the most frequence use cases for this emoji.',
+      'A woman and man holding hands, most likely due to being in a relationship.',
   },
   {
     id: 4,
-    name: 'Red Heart',
-    emoji: '❤️',
+    name: 'Couple with Heart',
+    emoji: '💑',
     meaning:
-      'The red heart ideograph is traditionally used for expressions of love and romance across many cultures, with this being amongst the most frequence use cases for this emoji.',
+      'A couple standing next to each other, smiling, with a love heart floating in the air between them. No gender is specified for the two people, and as such this may be used to represent the concept of a couple broadly, and/or as a means of showing two non-binary people.',
   },
   {
     id: 5,
-    name: 'Red Heart',
-    emoji: '❤️',
+    name: 'Kiss Mark',
+    emoji: '💋',
     meaning:
-      'The red heart ideograph is traditionally used for expressions of love and romance across many cultures, with this being amongst the most frequence use cases for this emoji.',
+      'The mark left after a firm kiss is placed with bright lipstick. Used in place of ‘xxx’ (kisses), or to send a kiss to someone. More seductive than the kiss emoji.',
   },
   {
     id: 6,
-    name: 'Red Heart',
-    emoji: '❤️',
+    name: 'Smiling Face with Hearts',
+    emoji: '🥰',
     meaning:
-      'The red heart ideograph is traditionally used for expressions of love and romance across many cultures, with this being amongst the most frequence use cases for this emoji.',
+      'A yellow face with smiling eyes, a closed smile, rosy cheeks, and several hearts floating around its head. Expresses a range of happy, affectionate feelings, especially being in love. The placement of the hearts varies slightly by platform',
   },
   {
     id: 7,
