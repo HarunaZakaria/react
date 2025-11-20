@@ -43,24 +43,23 @@ const emojipedia = [
   },
   {
     id: 7,
-    name: 'Red Heart',
-    emoji: '❤️',
+    name: 'Revolving Hearts',
+    emoji: '💞',
     meaning:
-      'The red heart ideograph is traditionally used for expressions of love and romance across many cultures, with this being amongst the most frequence use cases for this emoji.',
+      'Hearts revolving around one or more other hearts. This emoji was originally animated on a number of Japanese devices.',
   },
   {
     id: 8,
-    name: 'Red Heart',
-    emoji: '❤️',
+    name: 'Heart Hands',
+    emoji: '🫶',
     meaning:
-      'The red heart ideograph is traditionally used for expressions of love and romance across many cultures, with this being amongst the most frequence use cases for this emoji.',
+      'Two hands forming a heart shape. Used to express love and support.This emoji currently showns the heart being made through two hands being curved into a C-shape with their thumbs touching. This is stereotypically referred to as the "Millennial Hand Heart".',
   },
   {
     id: 9,
-    name: 'Red Heart',
-    emoji: '❤️',
-    meaning:
-      'The red heart ideograph is traditionally used for expressions of love and romance across many cultures, with this being amongst the most frequence use cases for this emoji.',
+    name: 'Backhand Index Pointing Right',
+    emoji: '👉',
+    meaning: 'An index finger pointing to the right.',
   },
   {
     id: 10,
