@@ -9,8 +9,16 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Note from './Components/Note';
 import Card from './Components/Card';
+import Avator from './Components/Avator';
+import contacts from './Components/Contacts';
+import CreateCard from './Components/CreateCard';
+import emojipedia from './Components/Emojipedia';
 
 function App() {
+  emojipedia.map(function (emoji) {
+    const emojiMeans = emoji.meaning;
+    console.log(emojiMeans.substring(0, 50));
+  });
   return (
     <>
       {/* <Image />
@@ -30,10 +38,12 @@ function App() {
         </ul> */}
         <Header />
       </header>
-      <main>
+      <main className="main">
         <Note />
         {/* Card components here */}
-        <Card
+        <Avator img="./Haruna.png" />
+        {/* <div className="card-container">
+          <Card
           name="Haruna"
           phone="+233545771497"
           email="Harunzy55@gmail.com"
@@ -45,6 +55,8 @@ function App() {
           email="Jalid55@gmail.com"
           img="./jalid.jpeg"
         />
+        </div> */}
+        <div className="card-container">{contacts.map(CreateCard)}</div>
       </main>
       <footer>
         <Footer />
