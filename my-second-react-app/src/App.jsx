@@ -10,15 +10,16 @@ import Footer from './Components/Footer';
 import Note from './Components/Note';
 import Card from './Components/Card';
 import Avator from './Components/Avator';
-import contacts from './Components/Contacts';
-import CreateCard from './Components/CreateCard';
-import emojipedia from './Components/Emojipedia';
+import Login from './Components/Login';
+// import contacts from './Components/Contacts';
+// import CreateCard from './Components/CreateCard';
+// import emojipedia from './Components/Emojipedia';
+// import createEmojiCard from './Components/createEmojiCard';
+
 
 function App() {
-  emojipedia.map(function (emoji) {
-    const emojiMeans = emoji.meaning;
-    console.log(emojiMeans.substring(0, 50));
-  });
+ 
+
   return (
     <>
       {/* <Image />
@@ -42,6 +43,8 @@ function App() {
         <Note />
         {/* Card components here */}
         <Avator img="./Haruna.png" />
+
+        <Login />
         {/* <div className="card-container">
           <Card
           name="Haruna"
@@ -56,7 +59,11 @@ function App() {
           img="./jalid.jpeg"
         />
         </div> */}
-        <div className="card-container">{contacts.map(CreateCard)}</div>
+
+
+        {/* <div className="card-container">{contacts.map(CreateCard)}</div>
+        <div className="card-container">{emojipedia.map(createEmojiCard)}</div>
+        */}
       </main>
       <footer>
         <Footer />
