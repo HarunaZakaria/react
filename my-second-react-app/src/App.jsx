@@ -6,21 +6,19 @@ import CurrentTime from './CurrentTime';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Time from './Components/Time';
-
-
+import animals from './Components/Data';
 
 function App() {
- 
-
+  const [dog, sheep, cat] = animals;
+  console.log(cat);
+  const { name, sound } = dog;
+  console.log(sound + " "+ name);
   return (
     <>
-      
-        <Header />
-     
-        <Time />
+      <Header />
 
-        
-    
+      <Time />
+
       <footer>
         <Footer />
       </footer>
