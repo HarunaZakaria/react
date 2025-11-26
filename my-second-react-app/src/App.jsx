@@ -6,18 +6,20 @@ import CurrentTime from './CurrentTime';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Time from './Components/Time';
-import animals from './Components/Data';
+import Login from './Components/Login';
 
 function App() {
-  const [dog, sheep, cat] = animals;
-  console.log(cat);
-  const { name, sound } = dog;
-  console.log(sound + " "+ name);
   return (
     <>
-      <Header />
+    <header>
+    <Header />
+    </header>
+      <main>
+     <Time />
+      <Login />
+      </main>
 
-      <Time />
+     
 
       <footer>
         <Footer />
