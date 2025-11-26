@@ -3,11 +3,11 @@ import Input from './Input';
 
 const Login = () => {
   return (
-    <div>
+    <div className="input">
       <h1>Login Form</h1>
-
       <Input type="text" placeholder="User Name" label="UserName" />
-      <Input type="text" placeholder="Password" label="Password" />
+      <Input type="password" placeholder="Password" label="Password" />
+      <button>Sign In</button>
     </div>
   );
 };
