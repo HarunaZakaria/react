@@ -9,6 +9,7 @@ const Home = () => {
       </div>
       <h1>Secrets</h1>
       <p>Don't keep your Secrets share the anonymously</p>
+      <hr />
       <nav className="home-btns">
         <Link to="/SignIn" className="btn btn-primary">
           Sign In

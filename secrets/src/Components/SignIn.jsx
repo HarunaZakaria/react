@@ -5,11 +5,9 @@ const SignIn = () => {
     <div>
       <h1>Sign In</h1>
       <div className="sign-in-form">
-        <form>
+        <form action="?SignIn" method="POST">
           <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">
-              Email address
-            </label>
+            <label for="Email">Email address</label>
             <input
               type="email"
               className="form-control"
@@ -18,9 +16,7 @@ const SignIn = () => {
             />
           </div>
           <div className="mb-3">
-            <label for="exampleInputPassword1" className="form-label">
-              Password
-            </label>
+            <label for="Password">Password</label>
             <input
               type="password"
               className="form-control"
@@ -29,7 +25,7 @@ const SignIn = () => {
             />
           </div>
           <button type="submit" className="btn btn-primary">
-            Submit
+            Login
           </button>
         </form>
       </div>
