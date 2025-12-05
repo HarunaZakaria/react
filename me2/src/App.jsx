@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import './App.css';
+import Card from './Components/Card';
+//import products from './Components/Products';
 
-const products = [
+const productss = [
   {
     title: 'Shoes',
     id: 1,
@@ -29,11 +31,13 @@ const products = [
   },
 ];
 
-const items = products.map((product) => (
+const items = productss.map((product) => (
   <li key={product.id} style={{ color: product.isFruit ? 'magenta' : 'red' }}>
     {product.title}
   </li>
 ));
+
+//const sandals = products.map(product)
 
 function App() {
   const [count, setCount] = useState(0);
@@ -49,6 +53,10 @@ function App() {
     <div>
       <h1>{count}</h1>
       <ul>{items}</ul>
+
+      <div>
+        <Card />
+      </div>
       <button onClick={Add}>Add</button>
       <button onClick={Subtract}>Subtract</button>
     </div>
