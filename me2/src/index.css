@@ -53,6 +53,12 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.card {
+  width: 300px;
+}
+.card-img-top {
+  width: 300px;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
